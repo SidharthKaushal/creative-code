@@ -552,10 +552,11 @@ h3,
 
   .footer-links {
     display: flex;
-    gap: 10px;
+    gap: 60px;
     align-items: center;
     list-style: none;
     justify-content: center;
+    padding-top: 23.63px;
 
     a {
       color: #000;
