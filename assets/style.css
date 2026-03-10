@@ -563,7 +563,7 @@ h3,
       transition: .3s;
       
       &:hover{
-        color: var(--secondary-color);
+        color: var(--secondary-color); 
       }
     }
   }
