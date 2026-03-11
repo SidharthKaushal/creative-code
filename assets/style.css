@@ -672,14 +672,14 @@ h3,
         padding-block: 0;
         order: 2;
       }
-      .why-img-block {
-        padding-inline: 10px;
-        margin-bottom: 10px;
-        .why-work-img {
-          order: 1;
-          border-radius: 20px;
-        }
+      .why-work-img {
+        order: 1;
+        border-radius: 0px;
+        padding: 10px;
+        border-radius: 30px;
+        margin-bottom: 30px;
       }
+
       .content-block {
         padding: 20px;
         border-radius: 20px;
@@ -692,7 +692,7 @@ h3,
         .accordion {
           margin-top: 10px;
         }
-        .read-more-btn{
+        .read-more-btn {
           margin-top: 20px;
         }
       }
