@@ -557,6 +557,7 @@ h3,
     list-style: none;
     justify-content: center;
     padding-top: 23.63px;
+    padding-left: 0;
 
     a {
       color: #000;
@@ -600,6 +601,11 @@ h3,
 /* Media Query for Mobile Devices */
 
 @media (max-width: 767px) {
+  :root {
+    --fs-h2: 38px;
+    --fs-h3: 24px;
+    --fs-body: 14px;
+  }
   .header-block {
     .top-header {
       border-bottom: 1px solid #ffffff42;
@@ -640,19 +646,92 @@ h3,
       width: 80%;
       p {
         width: 100%;
-       font-size: 42px;
+        font-size: 42px;
         line-height: 110%;
       }
     }
 
-    .scroll-down-btn{
+    .scroll-down-btn {
       height: 50px;
       width: 25px;
-      &:after{
+      &:after {
         bottom: 10px;
         height: 10px;
         width: 10px;
       }
+    }
+  }
+  .why-work-block {
+    padding-block: 40px;
+
+    .section-grid {
+      grid-template-columns: 1fr;
+
+      .container {
+        margin: 0;
+        padding-block: 0;
+        order: 2;
+      }
+      .why-img-block {
+        padding-inline: 10px;
+        margin-bottom: 10px;
+        .why-work-img {
+          order: 1;
+          border-radius: 20px;
+        }
+      }
+      .content-block {
+        padding: 20px;
+        border-radius: 20px;
+
+        h2 {
+          font-size: 38px;
+          width: 100%;
+        }
+
+        .accordion {
+          margin-top: 10px;
+        }
+        .read-more-btn{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .gallary-block {
+    .gallarySwiper {
+      padding-inline: 0px;
+      margin-inline: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+
+      .swiper-btn {
+        height: 40px;
+        width: 40px;
+
+        &:after {
+          font-size: 10px;
+        }
+
+        &.swiper-button-disabled {
+          display: flex;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .footer-block {
+    padding-block: 30px;
+
+    .footer-brand {
+      font-size: 42px;
+    }
+    .social-links {
+      margin-block: 20px;
+    }
+    .footer-links {
+      gap: 20px;
+      flex-direction: column;
     }
   }
 }
